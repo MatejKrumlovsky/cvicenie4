@@ -8,6 +8,7 @@ public abstract class Zivocich {
 
 
     public static void main (String [] args){
+
         var psik = new Pes("Stela");
         var clovek = new Clovek("Fero Hora");
 
@@ -32,6 +33,36 @@ public abstract class Zivocich {
         for(int j = 0; j < listludi.size();j++){
             System.out.println(listludi.get(j));
         }
+
+
+
+
+
+
+
+        var listZklavesnice = new ArrayList<>();
+        int i = ZKlavesnice.readInt("Zadaj pocet prvkov pola");
+        int j = ZKlavesnice.readInt("Zadaj cislo ktore sa vymazat");
+        for (int pocitadlo = 0; pocitadlo < i; pocitadlo++){
+            listZklavesnice.add(pocitadlo);
+            //listZklavesnice.remove(3);
+            //System.out.println(listZklavesnice.get(pocitadlo));//listZklavesnice.get(pocitadlo);
+        }
+        for (int delete = 0; delete < i; delete = delete + j )
+            listZklavesnice.remove(delete);
+
+        for (int m = 0; m < listZklavesnice.size();m++){
+            System.out.println(listZklavesnice.get(m));
+        }
+
+
+
+
+
+
+
+
+
 
 
 

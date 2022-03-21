@@ -1,5 +1,9 @@
 public class Pes extends Zivocich{
 
+    @Override
+    public String toString() {
+        return meno;
+    }
 
     private final String meno;
 

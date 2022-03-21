@@ -2,6 +2,11 @@ public class Clovek extends Zivocich{
 
     private final String meno;
 
+    @Override
+    public String toString() {
+        return meno;
+    }
+
     public Clovek(String meno) {
         this.meno = meno;
     }
