@@ -8,7 +8,7 @@ public abstract class Zivocich {
 
 
     public static void main (String [] args){
-
+        /*
         var psik = new Pes("Stela");
         var clovek = new Clovek("Fero Hora");
 
@@ -54,6 +54,24 @@ public abstract class Zivocich {
         for (int m = 0; m < listZklavesnice.size();m++){
             System.out.println(listZklavesnice.get(m));
         }
+
+         */
+
+        ArrayList<String> list1 = new ArrayList<String>();
+        list1.add("1"); list1.add("2"); list1.add("3");
+        //System.out.println(list1.size());
+
+        ArrayList<String> list2 = new ArrayList<String>();
+        list2.add("ja"); list2.add("my"); list2.add("oni");
+
+        ArrayList<String> list3 = new ArrayList<String>();
+        list3.add("trojuholnik"); list3.add("kruh"); list3.add("kocka");
+
+        ArrayList<ArrayList<String>> list2D = new ArrayList<>();
+        list2D.add(list1); list2D.add(list2); list2D.add(list3);
+        System.out.println(list2D.get(0));
+        System.out.println(list2D.get(1));
+        System.out.println(list2D.get(2));
 
 
 
